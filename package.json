@@ -7,7 +7,6 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "tw": "npx tailwindcss -i ./style.css -o ./dist/output.css --watch",
     "deploy": "yarn run build && gh-pages -d dist"
   },
   "devDependencies": {
