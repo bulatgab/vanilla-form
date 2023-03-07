@@ -7,10 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "tw": "npx tailwindcss -i ./style.css -o ./dist/output.css --watch"
+    "tw": "npx tailwindcss -i ./style.css -o ./dist/output.css --watch",
+    "deploy": "yarn run build && gh-pages -d dist"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7",
     "vite": "^4.1.0"
