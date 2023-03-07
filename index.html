@@ -20,24 +20,24 @@
         <label for="name-input" class="text-sm text-slate-300">
           Name
         </label>
-        <input type="text" id="name-input" maxlength="255" class="bg-slate-600 rounded text-white text-lg px-2 py-0.5 mb-3">
+        <input required type="text" id="name-input" name="name-input" maxlength="255" class="bg-slate-600 rounded text-white text-lg px-2 py-0.5 mb-3">
 
         <label for="surname-input" class="text-sm text-slate-300">
           Surname
         </label>
-        <input type="text" id="surname-input" maxlength="255" class="bg-slate-600 rounded text-white text-lg px-2 py-0.5 mb-3">
+        <input type="text" id="surname-input" name="surname-input" maxlength="255" class="bg-slate-600 rounded text-white text-lg px-2 py-0.5 mb-3">
 
         <label for="password-input" class="text-sm text-slate-300">
           Password
         </label>
-        <input type="password" id="password-input" maxlength="255" class="bg-slate-600 rounded text-white text-lg px-2 py-0.5 mb-3">
+        <input type="password" id="password-input" name="password-input" maxlength="255" class="bg-slate-600 rounded text-white text-lg px-2 py-0.5 mb-3">
 
-        <label for="password-again-input" class="text-sm text-slate-300">
+        <label for="repeat-password-input" class="text-sm text-slate-300">
           Repeat password
         </label>
-        <input type="password" id="password-again-input" maxlength="255" class="bg-slate-600 rounded text-white text-lg px-2 py-0.5 mb-7">
+        <input type="password" id="repeat-password-input" name="password-again-input" maxlength="255" class="bg-slate-600 rounded text-white text-lg px-2 py-0.5 mb-7">
 
-        <input type="submit" value="Register" class="text-white text-lg uppercase bg-gradient-to-r from-fuchsia-600 to-indigo-700 rounded p-2 cursor-pointer">
+        <input type="submit" value="Register" class="text-white text-lg uppercase enabled:bg-gradient-to-r enabled:from-fuchsia-600 enabled:to-indigo-700 rounded p-2 enabled:cursor-pointer disabled:bg-gray-600 disabled:text-gray-500">
       </form>
     </div>
   </body>
