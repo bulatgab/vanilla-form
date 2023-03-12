@@ -11,11 +11,20 @@
     <script type="module" src="/main.js"></script>
     <div class="h-screen w-screen flex justify-center items-center">
       <form class="max-w-md bg-slate-700 p-10 rounded-xl flex flex-col">
-        <img
-            src="https://api.dicebear.com/5.x/fun-emoji/svg?seed=Snickers&backgroundColor=c026d3,4338ca&backgroundType=gradientLinear"
-            alt="avatar"
-            class="w-28 rounded-full self-center"
-        />
+        <div id="avatar-container" class="self-center cursor-pointer relative">
+          <img
+              id="avatar"
+              src="https://api.dicebear.com/5.x/fun-emoji/svg?seed=Snickers&backgroundColor=c026d3,4338ca&backgroundType=gradientLinear"
+              alt="avatar"
+              class="w-28 h-28 rounded-full object-cover"
+          />
+          <img src="/edit.svg" class="w-5 h-5 p-0.5 bg-slate-600 rounded-full absolute top-1 right-1" alt="edit avatar icon"/>
+        </div>
+        <input
+            id="avatar-input"
+            type="file"
+            accept="image/*"
+            class="w-1 h-1 opacity-0">
 
         <label for="name-input" class="text-sm text-slate-300">
           Name

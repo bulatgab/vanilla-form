@@ -56,3 +56,17 @@ function validate() {
 
   submitButton.disabled = state.validationErrors.length > 0;
 }
+
+const avatarEl = document.querySelector('#avatar')
+
+// we are transferring the click from the avatar container to the invisible avatar input
+const avatarContainer = document.querySelector('#avatar-container')
+avatarContainer.addEventListener('click', () => avatarInput.click())
+
+const avatarInput = document.querySelector('#avatar-input')
+avatarInput.addEventListener('change', updateAvatar)
+
+function updateAvatar() {
+  const file = avatarInput.files[0]
+  avatarEl.src = URL.createObjectURL(file)
+}
